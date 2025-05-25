@@ -1,15 +1,36 @@
 import streamlit as st
+import pandas as pd
+import datetime as dt
 
 st.set_page_config(page_title="KHMScanner", layout="wide")
 
-st.title("Bienvenue sur KHMScanner")
+# En-tête
+st.title("KHMScanner - Scanner Crypto Automatisé")
 st.markdown("""
-Bienvenue sur ton **scanner crypto** personnel.  
-Ici, tu vas bientôt pouvoir :
-- Visualiser les **graphiques en bougie**
-- Identifier les **supports / résistances**
-- Détecter les **tendances**
-- Et recevoir des **alertes achat/vente**
-
-> Projet développé avec amour par **KHMMarketing**
+Bienvenue sur **KHMScanner**, ton outil de détection automatique de :
+- **Supports / résistances fréquents**
+- **Tendances de marché**
+- **Alertes achat / vente**
+- Mise à jour automatique toutes les **minutes**
+---
 """)
+
+# Zone d'information
+st.info("Fonctionnalité complète bientôt disponible. Cette version est une base de travail. Déploiement progressif en cours.")
+
+# Données simulées pour l'instant
+data = {
+    "Paire": ["BTC/USDT", "ETH/USDT", "BNB/USDT"],
+    "Support détecté": [26500, 1750, 300],
+    "Résistance détectée": [28000, 1900, 330],
+    "Tendance": ["Haussière", "Neutre", "Baissière"],
+    "Alerte": ["Achat possible", "Attente", "Vente possible"]
+}
+df = pd.DataFrame(data)
+
+# Affichage du tableau
+st.subheader("Analyse en temps réel (exemple)")
+st.dataframe(df)
+
+# Dernière mise à jour
+st.caption(f"Dernière mise à jour : {dt.datetime.now().strftime('%
