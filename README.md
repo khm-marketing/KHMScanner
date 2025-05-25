@@ -20,3 +20,11 @@ Il analyse toutes les paires fréquentes de Binance, détecte les supports et r�
 1. Clone ce dépôt :  
 ```bash
 git clone https://github.com/khm-marketing/KHMScanner.git
+---
+
+## Installation des dépendances
+
+Avant de lancer l’application, installez les bibliothèques Python nécessaires avec la commande :
+
+```bash
+pip install -r requirements.txt
