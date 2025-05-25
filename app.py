@@ -10,7 +10,8 @@ st.set_page_config(page_title="KHMScanner", layout="wide")
 st.title("KHMScanner - Scanner Crypto Intelligent")
 
 # Initialisation de l'exchange (Binance)
-binance = ccxt.binance()
+ccxt.base.errors.ExchangeNotAvailable: This app has encountered an error. The original error message is redacted to prevent data leaks. Full error details have been recorded in the logs (if you're on Streamlit Cloud, click on 'Manage app' in the lower right of your app).
+Traceback:
 
 # Récupérer les paires disponibles
 @st.cache_data(ttl=3600)
