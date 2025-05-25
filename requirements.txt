@@ -1,7 +1,0 @@
-streamlit
-python-binance
-pandas
-numpy
-matplotlib
-plotly
-ccxt
